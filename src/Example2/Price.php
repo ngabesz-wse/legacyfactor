@@ -8,6 +8,7 @@
 
 namespace Example2;
 
+use Example2\Helper\Tax;
 
 class Price
 {

@@ -6,7 +6,7 @@
  * Time: 15:28
  */
 
-namespace Example2;
+namespace Example2\Helper;
 
 
 class Tax

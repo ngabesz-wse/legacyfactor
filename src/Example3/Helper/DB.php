@@ -6,7 +6,7 @@
  * Time: 10:40
  */
 
-namespace Example3;
+namespace Example3\Helper;
 
 class DB
 {
