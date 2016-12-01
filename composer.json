@@ -1,0 +1,19 @@
+{
+    "name": "ngabesz-wse/legacyfactor",
+    "description": "little mind-breaker about unit testing legacy code",
+    "type": "project",
+    "require": {
+        "phpunit/phpunit": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ngabesz-wse",
+            "email": "nagygabor@webshopexperts.hu"
+        }
+    ]
+}
