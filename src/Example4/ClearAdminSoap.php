@@ -27,7 +27,6 @@ class ClearAdminSoap
 
     public function addOssze($a, $b)
     {
-
         // convert data to the right format
         $params = array(
             "values"=>array(
