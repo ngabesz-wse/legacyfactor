@@ -1,4 +1,4 @@
-# legacyfactor - a mind-breaker about unit testing legacy code
+# legacyfactor - a mind-breaker about unit testing and legacy code
 
 Under src directory you will find examples of bad program designs.
 Every example dir is a unique problem.
