@@ -14,7 +14,7 @@ class Tax
     public static function getTaxRate()
     {
         $array = array('27','10');
-        $array = shuffle($array);
+        shuffle($array);
         return $array[0];
     }
 }
