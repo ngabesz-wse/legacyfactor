@@ -14,7 +14,7 @@ class Registry
     public static function getAutohelpStatus()
     {
         $array = array(true,false);
-        $array = shuffle($array);
+        shuffle($array);
         return $array[0];
     }
 
