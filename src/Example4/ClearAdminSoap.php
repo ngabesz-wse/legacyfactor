@@ -1,5 +1,6 @@
 <?php
 
+namespace Example4;
 /**
  * Created by PhpStorm.
  * User: gabornagy
@@ -20,21 +21,26 @@ class ClearAdminSoap
      */
     public function __construct()
     {
-            $this->client = new SoapClient($this->url, array(
-                'encoding' => 'UTF-8'
-            ));
+        $this->client = $this->getClient();
     }
 
     public function addOssze($a, $b)
     {
         // convert data to the right format
         $params = array(
-            "values"=>array(
-                'a'=>intval($a),
-                'b'=>intval($b)
+            "values" => array(
+                'a' => intval($a),
+                'b' => intval($b)
             )
         );
 
         return $this->client->__soapCall('AddOssze', $params);
+    }
+
+    protected function getClient()
+    {
+        return new \SoapClient($this->url, array(
+            'encoding' => 'UTF-8'
+        ));
     }
 }

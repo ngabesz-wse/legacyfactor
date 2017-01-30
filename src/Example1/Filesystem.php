@@ -13,10 +13,15 @@ class Filesystem
     public function lowerCase($path)
     {
 
-        $entries = glob($path);
+        $entries = $this->readPath($path);
 
-        return array_map('strtolower',$entries);
+        return array_map('strtolower', $entries);
 
+    }
+
+    protected function readPath($path)
+    {
+        return glob((string)$path);
     }
 
 }
