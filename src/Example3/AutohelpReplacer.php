@@ -6,22 +6,37 @@
  * Time: 14:09
  */
 
-namespace Example3\Solution;
+namespace Example3;
 
 
 class AutohelpReplacer
 {
 
+    /**
+     * @var array
+     */
     protected $tags;
 
+    /**
+     * @var string
+     */
     protected $boundary;
 
-    public function __construct($autohelpTags, $boundary)
+    /**
+     * AutohelpReplacer constructor.
+     * @param array $autohelpTags
+     * @param $boundary
+     */
+    public function __construct(array $autohelpTags, $boundary)
     {
         $this->tags = $autohelpTags;
         $this->boundary = $boundary;
     }
 
+    /**
+     * @param $string
+     * @return string
+     */
     public function replace($string)
     {
         $autohelp_words = array();
@@ -32,7 +47,6 @@ class AutohelpReplacer
         $count_i = 0;
         $count_r = 0;
 
-        // html tagek cseréje #i#[sorszám]# tokenre
         $ignored = array();
         preg_match_all(
             '/<[^<>]+>/',
@@ -51,7 +65,7 @@ class AutohelpReplacer
         );
 
 
-        foreach ($this->tags->rows as $r) {
+        foreach ($this->tags as $r) {
 
             $tagSafe = preg_quote($r['tag'], '/');
 

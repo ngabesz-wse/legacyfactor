@@ -21,7 +21,6 @@ class FilesystemTest extends \PHPUnit_Framework_TestCase
             ->setMethods(array('readPath'))
             ->getMock();
 
-
     }
 
     public function testLowerCase()

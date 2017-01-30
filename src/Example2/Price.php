@@ -14,9 +14,7 @@ class Price
 {
     public function calculateGross($net)
     {
-
         return intval($net) * (($this->getTaxRate() / 100) + 1);
-
     }
 
     protected function getTaxRate()
