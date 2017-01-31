@@ -8,6 +8,8 @@ Imagine that these classes are part of a big and complex application so **you ar
 the signatures of methods nor the interface of a class** because somewhere it will break the application,
 but if needed you can add new classes and methods.
 
-If you would like to try to solve these problems, feel free to fork the repo and send me the link in email.
+If you would like to try to solve these problems, feel free to fork the repo.
+
+The solutions can be found in the solutions branch.
 
 Happy coding!
