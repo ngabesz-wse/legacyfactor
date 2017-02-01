@@ -13,6 +13,8 @@ but if needed you can add new classes and methods.
 
 If you would like to try to solve these problems, feel free to fork the repo.
 
+After a composer install you can easily run your test just type vendor/bin/phpunit in the cli.
+
 The solutions can be found in the solutions branch.
 
 Happy coding!
